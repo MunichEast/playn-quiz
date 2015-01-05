@@ -37,7 +37,7 @@ public abstract class Screen {
 	public final Clock.Source clock = new Clock.Source(UPDATE_RATE);
 
 	// for HTML5 we must work with ../../../artigo,
-	// for Java without /artigo...
+	// for Java with /artigo... (Jetty server must be started
 	// for contacting the online system with https://artigo.org/seam...
 	// public final String connectStringQuiz =
 	// "../../../artigo/seam/resource/quiz";

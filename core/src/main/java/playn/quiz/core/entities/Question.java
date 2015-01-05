@@ -34,10 +34,9 @@ public class Question {
 	private String institution;
 	private String datierung;
 	private String location;
-	private HashMap<String,Integer> tagList;
 
 	public Question(int questionNumber, String imageURL, String correctAnswer,
-			String[] answers, Integer[] deaths, String title, String teaser, String datierung, String institution, String location, HashMap<String,Integer> tagList) {
+			String[] answers, Integer[] deaths, String title, String teaser, String datierung, String institution, String location) {
 		this.imageURL = imageURL;
 		image = assets().getImage(getImageName());
 
@@ -49,7 +48,7 @@ public class Question {
 		this.setInstitution(institution);
 		this.setDatierung(datierung);
 		this.setLocation(location);
-		this.setTagList(tagList);
+		//this.setTagList(tagList);
 	}
 
 	private String getImageName() {
@@ -133,13 +132,13 @@ public class Question {
 		this.location = location;
 	}
 
-	public HashMap<String,Integer> getTagList() {
-		return tagList;
-	}
-
-	public void setTagList(HashMap<String,Integer> tagList) {
-		this.tagList = tagList;
-	}
+//	public HashMap<String,Integer> getTagList() {
+//		return tagList;
+//	}
+//
+//	public void setTagList(HashMap<String,Integer> tagList) {
+//		this.tagList = tagList;
+//	}
 
 
 }

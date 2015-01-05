@@ -678,6 +678,7 @@ public class RatingLayer {
 
 	/**
 	 * currently tags are not shown!
+	 * ... and not working any more
 	 */
 	public void zeigeTags() {
 		removeLayers();
@@ -691,29 +692,29 @@ public class RatingLayer {
 		tagCounter = 0;
 
 		
-		for (Entry<String, Integer> tagEntry : quizContent.getCurrentQuestion().getTagList().entrySet()) {
-			int x = (int) (PlayN.random() * 370);
-			int y = (int) (PlayN.random() * 160);
-
-			Label l = new Label(tagEntry.getKey().toUpperCase());
-			
-			int num = tagEntry.getValue();
-			if(num <=1){
-				l.setStyles(QuizStyles.fontStyleTag1);
-			}else if (num <=3){
-				l.setStyles(QuizStyles.fontStyleTag2);
-			}else if (num <=7){
-				l.setStyles(QuizStyles.fontStyleTag3);
-			}else if (num <=20){
-				l.setStyles(QuizStyles.fontStyleTag4);
-			}else{
-				l.setStyles(QuizStyles.fontStyleTag5);
-			}
-
-			l.layer.setAlpha(0);
-
-			tagGroup.add(AbsoluteLayout.at(l, x, y));
-		}
+//		for (Entry<String, Integer> tagEntry : quizContent.getCurrentQuestion().getTagList().entrySet()) {
+//			int x = (int) (PlayN.random() * 370);
+//			int y = (int) (PlayN.random() * 160);
+//
+//			Label l = new Label(tagEntry.getKey().toUpperCase());
+//			
+//			int num = tagEntry.getValue();
+//			if(num <=1){
+//				l.setStyles(QuizStyles.fontStyleTag1);
+//			}else if (num <=3){
+//				l.setStyles(QuizStyles.fontStyleTag2);
+//			}else if (num <=7){
+//				l.setStyles(QuizStyles.fontStyleTag3);
+//			}else if (num <=20){
+//				l.setStyles(QuizStyles.fontStyleTag4);
+//			}else{
+//				l.setStyles(QuizStyles.fontStyleTag5);
+//			}
+//
+//			l.layer.setAlpha(0);
+//
+//			tagGroup.add(AbsoluteLayout.at(l, x, y));
+//		}
 		tagRoot.add(tagGroup);
 
 		activeLayer.add(tagRoot.layer);

@@ -291,13 +291,13 @@ public class QuizContent extends Screen {
 		entities.add(gameClock);
 
 		this.alertRoot = iface.createRoot(AxisLayout.vertical().gap(0), null);
-		alertRoot.setSize(500, 310);
-		alertRoot.layer.setTranslation(WIDTH / 2 - 500 / 2, 5);
+		alertRoot.setSize(600, 310);
+		alertRoot.layer.setTranslation(WIDTH / 2 - 600 / 2, 5);
 
 		getStaticLayerFront().add(alertRoot.layer);
 
 		this.bonusRoot = iface.createRoot(AxisLayout.vertical().gap(20), null);
-		bonusRoot.setSize(250, 50);
+		bonusRoot.setSize(300, 50);
 		bonusRoot.layer.setTranslation(0, 0);
 		getStaticLayerFront().add(bonusRoot.layer);
 

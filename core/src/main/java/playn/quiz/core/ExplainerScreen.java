@@ -200,10 +200,10 @@ public class ExplainerScreen extends Screen {
 		canvasImage.canvas().fillRect(20, 10, 760, 50);
 		// left box
 		canvasImage.canvas().setFillColor(Color.BLUE);
-		canvasImage.canvas().fillRect(40, 380, 320, 170);
+		canvasImage.canvas().fillRect(30, 380, 340, 170);
 		// right box
 		canvasImage.canvas().setFillColor(Color.BLUE);
-		canvasImage.canvas().fillRect(440, 380, 320, 170);
+		canvasImage.canvas().fillRect(430, 380, 340, 170);
 		
 		CanvasImage canvasImageHeader = PlayN.graphics().createImage(WIDTH, HEIGHT);
 

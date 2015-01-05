@@ -64,12 +64,12 @@ public class QuizLoader {
 					String institution = jsonEntity.getString("Institution");
 					String location = jsonEntity.getString("Location");
 					
-					int numTags = jsonEntity.getInt("NumTags");
+					//int numTags = jsonEntity.getInt("NumTags");
 					
-					HashMap<String,Integer> tagList = new HashMap<String,Integer>();
-					for(int jj=0;jj<numTags;++jj){
-						tagList.put(jsonEntity.getString("Tag"+jj), jsonEntity.getInt("TagNum"+jj));
-					}
+//					HashMap<String,Integer> tagList = new HashMap<String,Integer>();
+//					for(int jj=0;jj<numTags;++jj){
+//						tagList.put(jsonEntity.getString("Tag"+jj), jsonEntity.getInt("TagNum"+jj));
+//					}
 					
 							
 					String answers[] = new String[4];
@@ -91,7 +91,7 @@ public class QuizLoader {
 				
 
 					Question question = new Question(i, imageURL,
-							correctAnswer, answers, deaths, title, teaser, datierung, institution, location, tagList);
+							correctAnswer, answers, deaths, title, teaser, datierung, institution, location);
 					// Question question = new
 					// Question(i,
 					// "","A","A","B","C","D");

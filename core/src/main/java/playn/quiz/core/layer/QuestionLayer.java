@@ -324,18 +324,18 @@ public class QuestionLayer {
 					// set correct button green
 					int correctButtonPos = quizContent.getCurrentQuestion()
 							.getCorrectAnswerNum();
-
+					Button correctButton = buttons[correctButtonPos];
 					if (correctButtonPos == 0) {
-						selectedButton.addStyles(Style.BACKGROUND.is(Background
+						correctButton.addStyles(Style.BACKGROUND.is(Background
 								.image((quizContent.buttonAGreen))));
 					} else if (correctButtonPos == 1) {
-						selectedButton.addStyles(Style.BACKGROUND.is(Background
+						correctButton.addStyles(Style.BACKGROUND.is(Background
 								.image((quizContent.buttonBGreen))));
 					} else if (correctButtonPos == 2) {
-						selectedButton.addStyles(Style.BACKGROUND.is(Background
+						correctButton.addStyles(Style.BACKGROUND.is(Background
 								.image((quizContent.buttonCGreen))));
 					} else if (correctButtonPos == 3) {
-						selectedButton.addStyles(Style.BACKGROUND.is(Background
+						correctButton.addStyles(Style.BACKGROUND.is(Background
 								.image((quizContent.buttonDGreen))));
 					}
 

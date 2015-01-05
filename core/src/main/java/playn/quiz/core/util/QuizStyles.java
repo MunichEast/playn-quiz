@@ -148,7 +148,7 @@ public final class QuizStyles {
 
 	public static final Styles FONT_STYLE_18 = Styles.make(
 			Style.FONT.is(verdana18Bold), Style.HALIGN.center,
-			Style.BACKGROUND.is(Background.solid(Color.BLUE).inset(4)),
+			Style.BACKGROUND.is(Background.blank()),
 			Style.COLOR.is(Color.WHITE));
 
 	public static final Styles FONT_STYLE_16_INSET = Styles.make(
