@@ -249,7 +249,7 @@ function quiz(){
   $stats && $stats({moduleName:'quiz', sessionId:$sessionId_0, subSystem:'startup', evtGroup:'bootstrap', millis:(new Date).getTime(), type:'selectingPermutation'});
   if (!isHostedMode()) {
     try {
-      strongName = '3997BBBA8A415944AC762000D791213A';
+      strongName = '42665E5496C396AAE187F599AAF2670C';
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = Number(strongName.substring(idx + 1));
