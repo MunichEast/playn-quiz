@@ -41,11 +41,11 @@ public abstract class Screen {
 	// for contacting the online system with https://artigo.org/seam...
 	// public final String connectStringQuiz =
 	// "../../../artigo/seam/resource/quiz";
-	public final String connectStringQuiz = "/artigo/seam/resource/quiz";
-	public final String connectStringQuiz2 = "/artigo/seam/resource/rating";
-	public final String connectStringHighScore = "/artigo/seam/resource/highscore";
-	public final String imageString = "/artigo/seam/resource/image/";
-	public final String connectStringLocale = "/artigo/seam/resource/locale";
+	public final String connectStringQuiz = "../../../seam/resource/quiz";
+	public final String connectStringQuiz2 = "../../../seam/resource/rating";
+	public final String connectStringHighScore = "../../../seam/resource/highscore";
+	public final String imageString = "../../../seam/resource/image/";
+	public final String connectStringLocale = "../../../seam/resource/locale";
 
 	/**
 	 * Returns the name of this demo.
